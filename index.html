@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>StudySmart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>StudySmart 📘</h1>
+    <p>A smart study tool for students</p>
+
+    <!-- Reference Finder Section -->
+    <div class="box">
+        <h2>Reference Finder</h2>
+
+        <input type="text" id="subject" placeholder="Enter subject name">
+        <br><br>
+ 
+
+
+        <button onclick="searchReferences()">Search References</button>
+    </div>
+
+    <!-- Exam Timetable Section -->
+    <div class="box">
+     
+        
+        <hr>
+
+<h2>📅 Semester Study Planner</h2>
+
+<input type="text" id="semSubject" placeholder="Subject name">
+<br><br>
+
+<input type="number" id="semChapters" placeholder="Number of chapters">
+<br><br>
+       <input type="date" id="examDate">
+<br><br>
+
+<button onclick="addSubject()">Add Subject</button>
+<br><br>
+
+
+<button onclick="generateSemesterPlan()">Generate Semester Timetable</button>
+
+<div id="semesterOutput"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
